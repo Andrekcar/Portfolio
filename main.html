@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .animate-scroll {
+            display: flex;
+            animation: scroll 25s linear infinite;
+            will-change: transform;
+        }
+
+    </style>
+
+</head>
+
+<body class="min-h-screen p-3 flex justify-center items-center"> 
+    <video autoplay muted loop class="fixed top-0 left-0 min-w-full min-h-full w-full h-full object-cover -z-10">
+        <source src="./static/videos/Fondox.mp4" type="video/mp4">
+    </video>
+    <div class="container max-w-7xl mx-auto">
+        <!-- Grid principal - Cambio a col-1 en móvil y col-12 en desktop -->
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-3">
+            <!-- Columna izquierda - Ajuste para ocupar todo el ancho en móvil -->
+            <div class="col-span-1 md:col-start-2 md:col-span-5 space-y-3 mx-auto">
+                <!-- Profile Card -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 space-y-3 border border-white/15">
+                    <div class="flex items-start justify-between">
+                        <div class="flex gap-4">
+                            <div class="w-16 h-16 rounded-lg overflow-hidden bg-gray-700">
+                                <img src="./static/images/1.png" alt="Profile" class="w-16 h-16 ">
+                            </div>
+                            <div class="space-y-1">
+                                <h1 class="text-2xl font-semibold text-white">Camilo Caro</h1>
+                                <div class="flex items-center gap-1">
+                                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+                                    <span class="text-sm text-gray-300"> Disponible</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="bg-green-500 text-black px-4 py-2 rounded-lg text-sm hover:bg-white-400 transition-colors flex items-center gap-2 transition-transform hover:scale-110 cursor-pointer">
+                            <img src="./static/images/descargas.svg" alt="Download" class="w-4 h-4"/>
+                            CV
+                        </button>
+                    </div>
+
+                    <div class="flex flex-wrap w-full gap-x-2 gap-y-2 lg:gap-2 justify-start">
+                        <!-- FILA 1 -->
+                        <span class="bg-[#171717] basis-[37.8%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
+                            <img src="./static/images/location.svg" class="w-4 h-4" />
+                            <span class="text-gray-300">COLOMBIA</span>
+                        </span>
+
+                        <span class="bg-[#171717] basis-[29.7%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
+                            <img src="./static/images/book.svg" class="w-4 h-4" />
+                            <span class="text-gray-300">UNAD</span>
+                        </span>
+
+                        <span class="bg-[#171717] basis-[27%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
+                            <img src="./static/images/time.svg" class="w-4 h-4" />
+                            <span class="text-gray-300">COT</span>
+                        </span>
+
+                        <!-- FILA 2 -->
+                        <span class="bg-[#171717] basis-[56.8%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
+                            <img src="./static/images/cmd.svg" class="w-4 h-4" />
+                            <span class="text-gray-300">DESARROLLADOR DE SOFTWARE</span>
+                        </span>
+
+                        <span class="bg-[#171717] basis-[40%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
+                            <img src="./static/images/compas.svg" class="w-4 h-4" />
+                            <span class="text-gray-300">VISIONARIO</span>
+                        </span>
+                    </div>
+
+
+                   
+
+
+              
+
+
+
+                    
+                    <div class="text-sm text-gray-400 flex justify-center ">
+                        Backend Developer
+                    </div>
+                </div>
+
+                <!-- Quien Soy Card -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
+                    <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Quien soy</h2>
+                    <p class="text-gray-400 leading-relaxed">
+                        ¡Hola! Soy Camilo, desarrollador backend especializado en crear soluciones innovadoras con software. Con 2 años de experiencia, he perfeccionado habilidades en tecnologías como Django, Flask y FastAPI. Mi enfoque combina creatividad y pasión, con el fin de ayudar a solventar las necesidades de las personas. ¿Tienes alguna idea que quisieras hacer realidad? No dudes en contactarme.
+                    </p>
+                </div>
+
+                <!-- Educación Card -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
+                    <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Educación</h2>
+                    <div class="flex items-center gap-3">
+                        <img src="./static/images/book.svg" alt="Book" class="w-6 h-6 transition-transform hover:scale-110"/>
+                        <span class="text-gray-300">Universidad Nacional Abierta y a Distancia</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Columna derecha -->
+            <div class="col-span-1 md:col-span-5 space-y-3">
+                <!-- Skills Card -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
+                    <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Skills / Tools</h2>
+                    <div class="overflow-hidden">
+                        <div class="animate-scroll flex gap-4">
+                            <!-- Primera serie de iconos -->
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/python.svg" alt="Python" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/django.svg" alt="Django" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/flask-dark.svg" alt="SQL" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/fastapi.svg" alt="PostgreSQL" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/mongodb.svg" alt="MongoDB" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/docker.svg" alt="Docker" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            
+                            <!-- Segunda serie de iconos (duplicados para la animación) -->
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/github-dark.svg" alt="Python" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/Notion.webp" alt="Django" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/DjangoREST.svg" alt="SQL" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/postgresql.svg" alt="PostgreSQL" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/mongodb.svg" alt="MongoDB" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
+                                <img src="./static/images/docker.svg" alt="Docker" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyectos Card -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 min-h-[284px] border border-white/15">
+                    <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Proyectos</h2>
+                    <div class="grid grid-cols-3 gap-4 min-h-[174px]">
+                        <div class="bg-[#171717] rounded-xl"></div>
+                        <div class="bg-[#171717] rounded-xl flex items-center justify-center text-gray-300">
+                            Ver
+                        </div>
+                        <div class="bg-[#171717] rounded-xl"></div>
+                    </div>
+                </div>
+
+                <!-- Contacto Card -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
+                    <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Contacto</h2>
+                    <div class="mt-4 flex items-center justify-center gap-2">
+                        <input type="text" id="email" value="ccaaro07@gmail.com" class="bg-[#171717] text-gray-300 px-4 py-2 rounded-lg w-full" readonly>
+                        <button onclick="copyEmail()" class="bg-green-500 text-black px-4 py-2 rounded-lg text-sm transition-transform hover:scale-110 cursor-pointer">
+                            Copiar
+                        </button>
+                    </div>
+                    <div class="mt-4 flex items-center justify-center gap-4">
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
+                            <img src="./static/images/whatsapp.svg" alt="Docker" class="max-w-[80%] max-h-[80%] object-contain"/>
+                        </div>
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
+                            <img src="./static/images/linkedin.svg" alt="Docker" class="max-w-[90%] max-h-[90%] object-contain"/>
+                        </div>
+                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
+                            <img src="./static/images/twitter.svg" alt="Docker" class="max-w-[80%] max-h-[90%] object-contain"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galería Card -->
+            <div class="col-span-1 md:col-start-2 md:col-span-10 bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
+                <h2 class="text-xl font-semibold mb-3 text-white flex justify-center">Galeria</h2>
+                <div class="flex flex-wrap justify-center gap-4 text-2xl">
+                    <span class="transition-transform hover:scale-110 cursor-pointer">fh</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">dj</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">🐘</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">🎨</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">🐬</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">🐋</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">🟣</span>
+                    <span class="transition-transform hover:scale-110 cursor-pointer">🐱</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function copyEmail() {
+            var emailField = document.getElementById("email");
+            emailField.select();
+            emailField.setSelectionRange(0, 99999); // Para dispositivos móviles
+            document.execCommand("copy");
+            alert("Correo copiado: " + emailField.value);
+        }
+    </script>
+    
+</body>
+</html>
