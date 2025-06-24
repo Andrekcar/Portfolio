@@ -1,7 +1,8 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
@@ -32,9 +33,7 @@
         <source src="./static/videos/Fondox.mp4" type="video/mp4">
     </video>
     <div class="container max-w-7xl mx-auto">
-        <!-- Grid principal - Cambio a col-1 en móvil y col-12 en desktop -->
         <div class="grid grid-cols-1 md:grid-cols-12 gap-3">
-            <!-- Columna izquierda - Ajuste para ocupar todo el ancho en móvil -->
             <div class="col-span-1 md:col-start-2 md:col-span-5 space-y-3 mx-auto">
                 <!-- Profile Card -->
                 <div class="bg-[#101010] rounded-2xl py-8 px-6 space-y-3 border border-white/15">
@@ -51,50 +50,34 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="bg-gradient-to-r from-slate-300 to-slate-500 text-black px-4 py-2 rounded-lg text-sm hover:bg-white-400 transition-colors flex items-center gap-2 transition-transform hover:scale-110 cursor-pointer">
+                        <button class="bg-gradient-to-r from-neutral-300 to-stone-400 text-black px-4 py-2 rounded-lg text-sm hover:bg-white-400 transition-colors flex items-center gap-2 transition-transform hover:scale-110 cursor-pointer">
                             <img src="./static/images/descargas.svg" alt="Download" class="w-4 h-4"/>
                             CV
                         </button>
                     </div>
 
                     <div class="flex flex-wrap w-full gap-x-2 gap-y-2 lg:gap-2 justify-start">
-                        <!-- FILA 1 -->
                         <span class="bg-[#171717] basis-[37.8%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
                             <img src="./static/images/location.svg" class="w-4 h-4" />
                             <span class="text-gray-300">COLOMBIA</span>
                         </span>
-
                         <span class="bg-[#171717] basis-[29.7%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
                             <img src="./static/images/book.svg" class="w-4 h-4" />
                             <span class="text-gray-300">UNAD</span>
                         </span>
-
                         <span class="bg-[#171717] basis-[27%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
                             <img src="./static/images/time.svg" class="w-4 h-4" />
                             <span class="text-gray-300">COT</span>
                         </span>
-
-                        <!-- FILA 2 -->
                         <span class="bg-[#171717] basis-[56.8%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
                             <img src="./static/images/cmd.svg" class="w-4 h-4" />
                             <span class="text-gray-300">DESARROLLADOR DE SOFTWARE</span>
                         </span>
-
                         <span class="bg-[#171717] basis-[40%] lg:basis-auto h-11 px-4 rounded-lg text-xs lg:text-sm flex items-center gap-2 justify-start">
                             <img src="./static/images/compas.svg" class="w-4 h-4" />
                             <span class="text-gray-300">VISIONARIO</span>
                         </span>
                     </div>
-
-
-                   
-
-
-              
-
-
-
-                    
                     <div class="text-sm text-gray-400 flex justify-center ">
                         Backend Developer
                     </div>
@@ -126,7 +109,6 @@
                 </div>
             </div>
 
-            <!-- Columna derecha -->
             <div class="col-span-1 md:col-span-5 space-y-3">
                 <!-- Skills Card -->
                 <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
@@ -141,7 +123,7 @@
                                 <img src="./static/images/django.svg" alt="Django" class="max-w-[90%] max-h-[90%] object-contain"/>
                             </div>
                             <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                                <img src="./static/images/flask-dark.svg" alt="SQL" class="max-w-[90%] max-h-[90%] object-contain"/>
+                                <img src="./static/images/mysql.svg" alt="SQL" class="max-w-[90%] max-h-[90%] object-contain"/>
                             </div>
                             <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
                                 <img src="./static/images/fastapi.svg" alt="PostgreSQL" class="max-w-[90%] max-h-[90%] object-contain"/>
@@ -161,7 +143,7 @@
                                 <img src="./static/images/Notion.webp" alt="Django" class="max-w-[90%] max-h-[90%] object-contain"/>
                             </div>
                             <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
-                                <img src="./static/images/DjangoREST.svg" alt="SQL" class="max-w-[90%] max-h-[90%] object-contain"/>
+                                <img src="./static/images/mysql.svg" alt="SQL" class="max-w-[90%] max-h-[90%] object-contain"/>
                             </div>
                             <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center">
                                 <img src="./static/images/postgresql.svg" alt="PostgreSQL" class="max-w-[90%] max-h-[90%] object-contain"/>
@@ -188,30 +170,41 @@
                     </div>
                 </div>
 
-                <!-- Contacto Card -->
-                <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
-                    <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Contacto</h2>
-                    <div class="mt-4 flex items-center justify-center gap-2">
-                        <input type="text" id="email" value="ccaaro07@gmail.com" class="bg-[#171717] text-gray-300 px-4 py-2 rounded-lg w-full" readonly>
-                        <button onclick="copyEmail()" class="bg-green-500 text-black px-4 py-2 rounded-lg text-sm transition-transform hover:scale-110 cursor-pointer">
-                            Copiar
-                        </button>
+                <!-- Contacto Card alargada -->
+                <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15 min-h-[220px] flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-xl font-semibold mb-4 text-white flex justify-center">Contacto</h2>
+                        <div class="mt-4 flex items-center justify-center gap-2">
+                            <input type="text" id="email" value="ccaaro07@gmail.com" class="bg-[#171717] text-gray-300 px-4 py-2 rounded-lg w-full" readonly>
+                            <button onclick="copyEmail()" class="bg-green-500 text-black px-4 py-2 rounded-lg text-sm transition-transform hover:scale-110 cursor-pointer">
+                                Copiar
+                            </button>
+                        </div>
+                        <div class="mt-4 flex items-center justify-center gap-4">
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
+                                <img src="./static/images/whatsapp.svg" alt="Docker" class="max-w-[80%] max-h-[80%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
+                                <img src="./static/images/linkedin.svg" alt="Docker" class="max-w-[90%] max-h-[90%] object-contain"/>
+                            </div>
+                            <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
+                                <img src="./static/images/twitter.svg" alt="Docker" class="max-w-[80%] max-h-[90%] object-contain"/>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mt-4 flex items-center justify-center gap-4">
-                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
-                            <img src="./static/images/whatsapp.svg" alt="Docker" class="max-w-[80%] max-h-[80%] object-contain"/>
-                        </div>
-                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
-                            <img src="./static/images/linkedin.svg" alt="Docker" class="max-w-[90%] max-h-[90%] object-contain"/>
-                        </div>
-                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center hover:scale-110 cursor-pointer">
-                            <img src="./static/images/twitter.svg" alt="Docker" class="max-w-[80%] max-h-[90%] object-contain"/>
-                        </div>
-                    </div>
+                    
                 </div>
+
+                <!-- Tarjeta pequeña adicional -->
+                
+            <div class="bg-[#101010] rounded-2xl py-8 px-6 border border-white/15 text-center text-gray-300 text-base shadow-md space-y-2">
+                <div>Estado actual: En búsqueda de nuevos retos 🚀</div>
+                <div class="text-sm text-gray-400">Disponible para colaboración freelance</div>
             </div>
 
-            <!-- Galería Card -->
+
+            </div>
+
             <div class="col-span-1 md:col-start-2 md:col-span-10 bg-[#101010] rounded-2xl py-8 px-6 border border-white/15">
                 <h2 class="text-xl font-semibold mb-3 text-white flex justify-center">Galeria</h2>
                 <div class="flex flex-wrap justify-center gap-4 text-2xl">
@@ -232,11 +225,10 @@
         function copyEmail() {
             var emailField = document.getElementById("email");
             emailField.select();
-            emailField.setSelectionRange(0, 99999); // Para dispositivos móviles
+            emailField.setSelectionRange(0, 99999);
             document.execCommand("copy");
             alert("Correo copiado: " + emailField.value);
         }
     </script>
-    
 </body>
 </html>
